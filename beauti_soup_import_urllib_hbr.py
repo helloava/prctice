@@ -11,5 +11,5 @@ authors = []
 for tag in soup.select(".item-title"):
 	authors.append(tag.get_text())
 for author in authors:
-	print author
-
+	print author.decode("utf-8") 
+	

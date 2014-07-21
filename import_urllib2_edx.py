@@ -7,7 +7,7 @@ def ed(pgNum):
 	html=a.read().split('<div class="top views-fieldset" data-module="views_fieldsets">')
 
 	for data in html[1:]:
-		print data.split('</a>')[0]
+		print data.split('">')[2].split('</a>')[0]
 
-for i in range(1,9):
+for i in range(1,2):
 	ed(i)
